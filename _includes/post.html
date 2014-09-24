@@ -1,0 +1,20 @@
+<div class="post">
+  <div class="postHeader">
+    <div>
+      <h2>
+        <a>{{ post.title }}</a>
+        <br>
+        <small>
+          <i class="icon-calendar"></i> {{ post.date | date_to_long_string }} by {{ post.author }} in {{ post.category }}  
+          <br>
+          <h6><i class="icon-tags"></i> </h6>
+        </small>
+      </h2>
+    </div>
+  </div>
+  <div id="post">
+    <div class="accordion-inner">
+      {{ post.content }} 
+    </div>
+  </div>
+</div>

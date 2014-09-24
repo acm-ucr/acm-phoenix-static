@@ -1,0 +1,5 @@
+# ignore built site
+_site/
+
+# ignore vim swp
+*.swp
