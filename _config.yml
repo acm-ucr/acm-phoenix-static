@@ -1,9 +1,10 @@
 # Our timezone is pacific standard
 timezone:    America/Los_Angeles
-# Page encoding 
+# Page encoding
 encoding:    utf-8
 # Enable sass builds and produce
 # minified output
 sass:
   sass_dir: _sass
   style:    :compressed
+paginate: 6
