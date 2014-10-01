@@ -1,0 +1,15 @@
+---
+layout: main
+---
+<div class="category-archive">
+  <div id="posts" class="accordion span11">
+        {% for post in site.posts %}
+              {% for category in post.categories %}
+                {% if category == page.category %}
+                    {% include post.html %}
+                    <br>
+                {% endif %}
+            {% endfor %}
+        {% endfor %}
+    </div>
+</div>

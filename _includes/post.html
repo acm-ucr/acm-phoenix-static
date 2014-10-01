@@ -5,7 +5,17 @@
         <a>{{ post.title }}</a>
         <br>
         <small>
-          <i class="icon-calendar"></i> {{ post.date | date_to_long_string }} by {{ post.author }} in {{ post.category }}  
+          <i class="icon-calendar"></i> {{ post.date | date_to_long_string }} by {{ post.author }} in
+            {% for category in post.categories %}
+                {% unless forloop.first %}
+                    {% if forloop.last %}
+                    and
+                    {% else %} 
+                    ,
+                    {% endif %}
+                {% endunless %}
+                <a href ="/{{category | downcase}}">{{category}} </a>
+            {% endfor %}
           <br>
         </small>
       </h2>
@@ -13,7 +23,7 @@
   </div>
   <div id="post">
     <div class="accordion-inner">
-      {{ post.content }} 
+      {{ post.content }}
     </div>
   </div>
 </div>
