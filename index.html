@@ -2,10 +2,44 @@
 layout: main
 title: ACM@UCR
 ---
+
 <!-- Posts -->
 <div id="posts" class="accordion span11">
-  {% for post in site.posts %}
+{% for post in paginator.posts %}
     {% include post.html %}
     <br>
   {% endfor %}
+</div>
+
+<!-- pagination menu -->
+<div id ="posts" class="accordion span11" style="text-align: right">
+{% if paginator.total_pages > 1 %}
+	<div class="pagination">
+{% if paginator.previous_page %}
+	{% if paginator.previous_page == 1 %}
+		<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+	{% else %}
+		<a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', paginator.previous_page }}">&raquo; Prev</a>
+	{% endif %}
+{% else %}
+	<span>&laquo; Prev</span>
+{% endif %}
+	
+{% for page in (1..paginator.total_pages) %}
+	{% if page == paginator.page %}
+		<em>{{ page }}</em>
+	{% elsif page == 1 %}
+		<a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+	{% else %}
+		<a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+	{% endif %}
+{% endfor %}
+	
+{% if paginator.next_page %}
+	<a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', paginator.next_page }}">Next &raquo;</a>
+{% else %}
+	<span>Next &raquo;</span>
+{% endif %}
+	</div>
+{% endif %}
 </div>

@@ -8,3 +8,5 @@ sass:
   sass_dir: _sass
   style:    :compressed
 paginate: 6
+paginate_path: "page:num/"
+baseurl: /
