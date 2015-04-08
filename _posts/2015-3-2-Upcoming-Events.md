@@ -3,7 +3,7 @@ title: Upcoming Events and Invitation to Fifth General Meeting
 layout: main
 author: Tina Wang
 categories:
-  - gerneral meeting 
+  - general meeting 
   - events
 ---
 
