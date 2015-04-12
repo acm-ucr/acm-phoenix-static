@@ -4,6 +4,9 @@ author: Aakash Kadakia
 categories:
    -events
 ---
+##Saturday: 4/11/15
+
+* **Hour of Code Volunteer** from **8AM - 12PM** at **Mira Loma Middle School** 30-90 students will be in attendance, each will have a laptop. Our volunteers would help students through the exercises on http://code.org/learn. Volunteers will meet at 7:30am at the Bourns Bus Stop. Rides will be provided to those who needs it. Come fully fed and bring snacks! Event page: [here!](https://www.facebook.com/events/867042560009177)
 
 ##Wednesday: 4/15/15
 
