@@ -2,7 +2,7 @@
 title: Upcoming Events (Spring Qtr 2015 - Week 3)
 author: Aakash Kadakia
 categories:
-   -events
+   - events
 ---
 ##Saturday: 4/11/15
 
