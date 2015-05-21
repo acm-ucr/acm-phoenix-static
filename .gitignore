@@ -3,3 +3,6 @@ _site/
 
 # ignore vim swp
 *.swp
+
+# ignore fly script
+fly

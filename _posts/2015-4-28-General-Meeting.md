@@ -2,7 +2,8 @@
 title: 3rd General Meeting (Spring Qtr 2015)
 author: Aakash Kadakia
 categories:
-   -events
+  - events
+  - general meeting
 ---
 ## FRIDAY - [ACM] Third General Meeting 
 

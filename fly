@@ -1,0 +1,10 @@
+#!/bin/bash
+
+tar -czf site.tar ./_site
+scp site.tar phoenix@acm.cs.ucr.edu:~/
+ssh phoenix@acm.cs.ucr.edu tar -xzf /home/phoenix/site.tar 
+ssh phoenix@acm.cs.ucr.edu rm /home/phoenix/site.tar 
+ssh phoenix@acm.cs.ucr.edu rm -fr /home/phoenix/site
+ssh phoenix@acm.cs.ucr.edu mv /home/phoenix/_site /home/phoenix/site
+ssh phoenix@acm.cs.ucr.edu chmod 755 -R /home/phoenix/site
+rm site.tar
